@@ -9,7 +9,26 @@
 </head>
 <body>
   <div class="container">
-    <header class="header">헤더</header>
+    <header class="header">
+      <!-- h1.logo>a[href="#"]>img -->
+      <h1 class="logo"><a href="#"><img src="images/rwd-logo.png" alt="web cafe"></a></h1>
+      <!-- ul.member>li*3>a[href="#"] -->
+      <!-- 보기 > 명령 팔레트 > emmet 약어로 개별 줄 래핑 -->
+      <ul class="member">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
+      <form action="https://formspree.io/ynr0107@gmail.com" method="POST" class="search">
+        <fieldset>
+          <legend>검색 폼</legend>
+          <!-- label+input#search -->
+          <label class="readable-hidden" for="search">검색어</label><input type="text" id="search">
+          <!-- button.btn-search -->
+          <button class="btn-search" type="submit">검색</button>
+        </fieldset>
+      </form>
+    </header>
     <nav class="navigation">내비게이션</nav>
     <main class="main">
       <section class="book">추천서적</section>
