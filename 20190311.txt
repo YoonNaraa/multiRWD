@@ -1,0 +1,94 @@
+https://github.com/seulbinim
+
+[반응형(Flexible) - RWD] VS [적응형(Adaptive) - AWD]
+
+** VS Code 에서 ctrl+`(터미널 열기)
+** [git 시작(.git생성) & 계정 연결]
+student@M505 MINGW64 ~/exRWD
+$ git init
+Initialized empty Git repository in c:/Users/student/exRWD/.git/
+
+student@M505 MINGW64 ~/exRWD (master)
+$ git config --global user.name YoonNaraa
+
+student@M505 MINGW64 ~/exRWD (master)
+$ git config --global user.email "ynr0107@gmail.com"
+
+student@M505 MINGW64 ~/exRWD (master)
+$ git config user.name
+YoonNaraa
+
+student@M505 MINGW64 ~/exRWD (master)
+$ git config user.email
+ynr0107@gmail.com
+
+
+** commit 하기 위해 stage로 올리기 위해 add를 해주어야함.
+student@M505 MINGW64 ~/exRWD (master)
+$ git add main.html
+
+
+** commit log 보기
+student@M505 MINGW64 ~/exRWD (master)
+$ git log
+commit 7dc934cfb2a57aee0e5380bf0034095fc98406eb (HEAD -> master)
+Author: YoonNaraa <ynr0107@gmail.com>
+Date:   Mon Mar 11 11:58:40 2019 +0900
+
+    본문내용 추가
+
+commit b107e1a248c19845d25ea5fcda23fddb2c758094
+Author: YoonNaraa <ynr0107@gmail.com>
+Date:   Mon Mar 11 11:56:54 2019 +0900
+
+    대제목 추가
+
+commit c6f0f790ed3dc272f24c82587ae190fe19e56a58
+Author: YoonNaraa <ynr0107@gmail.com>
+Date:   Mon Mar 11 11:54:22 2019 +0900
+
+    반응형 웹페이지에 적용할 스타일시트 생성
+
+commit 77a38ecf74ce27ef89f4b2217222ac23944026f9
+Author: YoonNaraa <ynr0107@gmail.com>
+Date:   Mon Mar 11 11:52:23 2019 +0900
+
+    반응형 웹사이트 마크업 파일 신규 생성
+
+
+** commit log 한줄로 보기
+student@M505 MINGW64 ~/exRWD (master)
+$ git log --oneline
+7dc934c (HEAD -> master) 본문내용 추가
+b107e1a 대제목 추가
+c6f0f79 반응형 웹페이지에 적용할 스타일시트 생성
+77a38ec 반응형 웹사이트 마크업 파일 신규 생성
+
+
+** 이전 commit으로 복구
+student@M505 MINGW64 ~/exRWD (master)
+$ git reset c6f0f79 --hard
+HEAD is now at c6f0f79 반응형 웹페이지에 적용할 스타일시트 생성
+
+student@M505 MINGW64 ~/exRWD (master)
+$ git log --oneline
+c6f0f79 (HEAD -> master) 반응형 웹페이지에 적용할 스타일시트 생성
+77a38ec 반응형 웹사이트 마크업 파일 신규 생성
+
+
+** git 온라인 저장소 등록
+student@M505 MINGW64 ~/exRWD (master)
+$ git remote add origin https://github.com/YoonNaraa/multiRWD.git
+
+
+** 현재 commit 지점을 git 저장소에 업로드
+student@M505 MINGW64 ~/exRWD (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 952 bytes | 952.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/YoonNaraa/multiRWD.git
+ * [new branch]      master -> master
