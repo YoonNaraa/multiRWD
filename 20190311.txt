@@ -92,3 +92,14 @@ Writing objects: 100% (7/7), 952 bytes | 952.00 KiB/s, done.
 Total 7 (delta 0), reused 0 (delta 0)
 To https://github.com/YoonNaraa/multiRWD.git
  * [new branch]      master -> master
+
+
+사이트분석: https://seulbi.github.io/
+	1. 논리적인 순서
+	헤더 - 내비게이션 - 콘텐츠 - 슬로건 - 푸터
+
+	2. 의미에 맞는 마크업
+	<header> - <nav> - <main> - <article,section> - <footer>
+
+	3. 네이밍
+	.header - .navigation - .main - .slogan - .footer
