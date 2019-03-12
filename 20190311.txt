@@ -1,5 +1,21 @@
 https://github.com/seulbinim
 
+웹브라우저 확장 프로그램 설치
+- Web Developer
+- HeadingsMap
+- OpenWAX
+- ColorZilla
+- WhatFont
+- Viewport Resizer
+
+VS Code 확장팩 설치
+- Live Server
+- Prettier-Code Formatter
+- Auto Close Tag
+- Auto Rename Tag
+- vscode-icons
+- Monokai-Contrast Theme
+
 [반응형(Flexible) - RWD] VS [적응형(Adaptive) - AWD]
 
 ** VS Code 에서 ctrl+`(터미널 열기)
