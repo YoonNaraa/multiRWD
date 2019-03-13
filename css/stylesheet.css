@@ -29,9 +29,6 @@ a{
 .navigation{
   background: lime;
 }
-.slogan{
-  background: skyblue;
-}
 .footer{
   background: yellow;
 }
@@ -188,6 +185,15 @@ body {
   padding: 5px;
 }
 .twitter-summary{
+  margin-top: 15px;
+}
+/* 푸터 공통 */
+.footer{
+  background: #988574;
+  color: #fff;
+}
+.copyright{
+  display: block;
   margin-top: 15px;
 }
 /* 모바일 스타일 */
@@ -349,11 +355,14 @@ body {
   }
   /* 모바일 슬로건 */
   .slogan{
-    height: 10vh;
+    display: none;
   }
   /* 모바일 푸터 */
   .footer{
-    height: 10vh;
+    padding: 20px;
+  }
+  .address span{
+    display: block;
   }
 }
 /* 데스크탑 스타일 */
@@ -512,10 +521,18 @@ body {
   }
   /* 데스크탑 슬로건 */
   .slogan{
-   height: 15vh;
+   padding: 50px 120px 15px;
+  }
+  .slogan q::before{
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .slogan q::after{
+    content: "";
   }
   /* 데스크탑 푸터 */
   .footer{
-    height: 15vh;
+    padding: 20px 0;
+    text-align: center;
   }
 }
